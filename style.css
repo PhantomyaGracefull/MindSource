@@ -383,6 +383,41 @@ footer {
 footer p { margin: 0; }
 footer a { font-weight: 700; }
 
+.humor-page {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 4px double var(--ink);
+  text-align: center;
+}
+
+.humor-page h3 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2rem, 5vw, 4.2rem);
+  line-height: 1;
+  letter-spacing: -.035em;
+}
+
+.humor-page > a {
+  display: block;
+  width: min(100%, 640px);
+  margin: 0 auto;
+}
+
+.humor-page img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--ink);
+}
+
+.humor-credit {
+  margin: .85rem auto 0;
+  color: var(--muted);
+  font: 700 .72rem/1.45 Arial, sans-serif;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
 /* Responsive safeguards for long editorial headlines and source links */
 .newspaper-grid > *,
 .archive-entry > *,
