@@ -383,8 +383,30 @@ footer {
 footer p { margin: 0; }
 footer a { font-weight: 700; }
 
+/* Responsive safeguards for long editorial headlines and source links */
+.newspaper-grid > *,
+.archive-entry > *,
+.tracker,
+.lead-copy {
+  min-width: 0;
+}
+
+.front-page > h2,
+.archive-entry h3,
+.tracker a,
+.tracker span,
+.contact-line a {
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+.satire-figure img {
+  max-width: 100%;
+}
+
 @media (max-width: 800px) {
   .utility-line span:nth-child(2) { display: none; }
+  .front-page > h2 { font-size: clamp(2.25rem, 7.5vw, 4.4rem); }
   .question-triad { grid-template-columns: 1fr; }
   .question-triad > div + div { border-top: 1px solid var(--ink); border-left: 0; }
   .edition-mark { display: none; }
@@ -401,6 +423,9 @@ footer a { font-weight: 700; }
 
 @media (max-width: 520px) {
   .masthead, main, footer { width: min(100% - 1.2rem, 1180px); }
+  .front-page > h2 { font-size: clamp(2rem, 10.5vw, 2.65rem); line-height: 1.02; }
+  .satire-figure { padding: .65rem; }
+  .tracker { padding: 1rem; box-shadow: 5px 5px 0 var(--paper-deep); }
   .utility-line { font-size: .62rem; }
   .brand-row { padding-block: 1.25rem; }
   .front-page { padding-top: 2.6rem; }
