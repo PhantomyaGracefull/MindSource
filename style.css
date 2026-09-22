@@ -181,6 +181,26 @@ main { padding-bottom: 4rem; }
   text-align: left;
 }
 
+.question-triad {
+  column-span: all;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1.6rem 0 2.4rem;
+  border: 1px solid var(--ink);
+  break-inside: avoid;
+}
+
+.question-triad > div { padding: 1.25rem; }
+.question-triad > div + div { border-left: 1px solid var(--ink); }
+.question-triad strong {
+  display: block;
+  color: var(--accent);
+  font: 900 .72rem/1.25 Arial, sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.question-triad p { margin-bottom: 0; }
+
 blockquote {
   break-inside: avoid;
   margin: 1.8rem 0 0;
@@ -318,6 +338,8 @@ footer a { font-weight: 700; }
 
 @media (max-width: 800px) {
   .utility-line span:nth-child(2) { display: none; }
+  .question-triad { grid-template-columns: 1fr; }
+  .question-triad > div + div { border-top: 1px solid var(--ink); border-left: 0; }
   .edition-mark { display: none; }
   .newspaper-grid,
   .split,
