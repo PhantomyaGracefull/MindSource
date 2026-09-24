@@ -134,7 +134,8 @@ main { padding-bottom: 4rem; }
   letter-spacing: -.045em;
 }
 
-#ausgabe > h2 {
+#ausgabe > h2,
+#ausgabe-002 > h2 {
   max-width: 980px;
   font-size: clamp(2.35rem, 4.8vw, 4.5rem);
   line-height: 1.02;
@@ -449,7 +450,8 @@ footer a { font-weight: 700; }
 @media (max-width: 800px) {
   .utility-line span:nth-child(2) { display: none; }
   .front-page > h2 { font-size: clamp(2.25rem, 7.5vw, 4.4rem); }
-  #ausgabe > h2 { font-size: clamp(2.2rem, 6vw, 3.4rem); }
+  #ausgabe > h2,
+#ausgabe-002 > h2 { font-size: clamp(2.2rem, 6vw, 3.4rem); }
   .question-triad { grid-template-columns: 1fr; }
   .question-triad > div + div { border-top: 1px solid var(--ink); border-left: 0; }
   .edition-mark { display: none; }
@@ -467,7 +469,8 @@ footer a { font-weight: 700; }
 @media (max-width: 520px) {
   .masthead, main, footer { width: min(100% - 1.2rem, 1180px); }
   .front-page > h2 { font-size: clamp(2rem, 10.5vw, 2.65rem); line-height: 1.02; }
-  #ausgabe > h2 { font-size: clamp(1.95rem, 9vw, 2.35rem); }
+  #ausgabe > h2,
+#ausgabe-002 > h2 { font-size: clamp(1.95rem, 9vw, 2.35rem); }
   .satire-figure { padding: .65rem; }
   .tracker { padding: 1rem; box-shadow: 5px 5px 0 var(--paper-deep); }
   .utility-line { font-size: .62rem; }
