@@ -134,7 +134,9 @@
     status.className = 'listen-status';
     status.setAttribute('role', 'status');
     controls.append(play, pause, halt, status);
-    article.prepend(controls);
+    const audioEntry = article.querySelector('#vorlesen');
+    if (audioEntry) audioEntry.append(controls);
+    else article.prepend(controls);
     updateButtons(controls, 'stopped');
 
     if (!supported) {

@@ -23,6 +23,7 @@ body {
 }
 
 a { color: inherit; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 .skip-link {
   position: fixed;
