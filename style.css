@@ -172,6 +172,33 @@ main { padding-bottom: 4rem; }
 .language-indicator__globe { font: 1.55rem/1 Arial, sans-serif; }
 .language-indicator__count { font: 800 .72rem/1 Arial, sans-serif; }
 
+.listen-controls {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .55rem;
+  margin: 0 0 1.8rem;
+  padding: .65rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.listen-controls button {
+  min-width: 2.8rem;
+  min-height: 2.8rem;
+  border: 1px solid var(--ink);
+  border-radius: .25rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 1.25rem/1 Arial, sans-serif;
+  cursor: pointer;
+}
+.listen-controls button:hover, .listen-controls button:focus-visible {
+  background: var(--ink);
+  color: var(--paper);
+}
+.listen-controls button:disabled { opacity: .45; cursor: default; }
+.listen-controls .listen-status { font: .8rem/1.4 Arial, sans-serif; }
+@media print { .listen-controls { display: none; } }
+
 .newspaper-grid {
   display: grid;
   grid-template-columns: minmax(0, 2.1fr) minmax(250px, .9fr);
